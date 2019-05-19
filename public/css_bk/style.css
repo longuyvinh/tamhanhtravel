@@ -1,0 +1,91 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+body {
+  background: #fff;
+  color: #69606b;
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;/*'Open Sans', sans-serif !important;*/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.tamhanh{ color: #DE0000; font-weight: 800;}
+a { outline: none; color: #cf4a5c; text-decoration: none;}
+a:hover, a:focus { color: #69606b; }
+
+/* To Navigation Style */
+.menu-top { width: 100%;position: absolute;top: 0; left: 0;text-transform: uppercase;font-size: 10px;padding: 0 32px;
+  letter-spacing: 1px;z-index: 10000; margin: 0;}
+.menu-top ul.right{ list-style-type: none; float: right;}
+.menu-top ul li{ display: inline-block; color: #fff; margin: 0 5px;}
+.menu-top ul li select{padding: 2px 5px;}
+.menu-top ul li a{ color: #fff; text-decoration: none;}
+.menu-top ul li a:hover{ color: #fff; text-decoration: underline;}
+
+ul.one-line{margin: 0; padding: 0;}
+ul.one-line li{display: inline-block; border-right: 1px solid #ccc; padding: 0 40px 0 10px;}
+ul.one-line li:last-child{border: none;}
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    color: #333;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px; font-size: 20px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    color: #333;
+}
+.modal-content {
+    background: #fefefe url('../images/bg_modal01.jpg') no-repeat right center;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+    /*position: relative; top: 0; right:0;*/
+    text-decoration: none;
+    float: right;
+    margin-top: -8px;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
